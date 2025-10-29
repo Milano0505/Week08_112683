@@ -1,4 +1,4 @@
-package week08.milano.id.ac.umn;
+package week08.milano.id.ac.umn.Tugas1;
 
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -17,6 +17,15 @@ public class Main {
         System.out.println("Nama : "+item.getName());
         System.out.println("Tipe : "+item.getType());
         System.out.println("Harga : "+item.getPrice());
+    }
+
+    public static void printPayment(Payment p) {
+        System.out.println("Nama Barang      : " + p.getItemName());
+        System.out.println("Status Pembayaran: " + p.getStatus());
+        System.out.println("Sisa Pembayaran  : " + p.getRemainingAmount());
+        System.out.println("Jenis Pembayaran : " +
+                (p instanceof Cash ? "CASH" : "CREDIT"));
+        System.out.println("-------------------------------------");
     }
 
     public static void main(String[] args) {
@@ -41,6 +50,7 @@ public class Main {
             }
             else if (opt == 2) {
             }
+
             else if(opt == 0) {
                 System.out.println("Terima Kasih");
             }

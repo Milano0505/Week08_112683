@@ -1,4 +1,4 @@
-package week08.milano.id.ac.umn;
+package week08.milano.id.ac.umn.Tugas1;
 
 public abstract class Payment {
     protected boolean isPaidOff;
