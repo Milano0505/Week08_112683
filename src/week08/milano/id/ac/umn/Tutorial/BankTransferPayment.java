@@ -1,4 +1,4 @@
-package week08.milano.id.ac.umn;
+package week08.milano.id.ac.umn.Tutorial;
 
 public class BankTransferPayment extends Payment {
     private String bankAccount;
